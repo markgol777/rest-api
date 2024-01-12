@@ -72,7 +72,7 @@ router.put('/:id', (req, res) => {
   res.json(newBook);
 })
 
-router.delete('/id', (req, res) => {
+router.delete('/:id', (req, res) => {
   const id = req.params.id;
 
   books = books.filter(book => book.id != id);
